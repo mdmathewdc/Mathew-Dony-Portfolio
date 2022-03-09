@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Mathew Dony</title>
         <meta name="description" content="Portfolio of Mathew Dony" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className={styles.main}>
