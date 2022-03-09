@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-export default function Home() {
+export default function Header() {
   const ref = useRef(null);
   React.useEffect(() => {
     import("@lottiefiles/lottie-player");
