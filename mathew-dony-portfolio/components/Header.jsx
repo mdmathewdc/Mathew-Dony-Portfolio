@@ -22,6 +22,14 @@ export default function Header() {
   return (
     <div>
       <HeaderWave />
+      <main>
+        <h1>Hi!</h1>
+        <h2>I'm Mathew Dony</h2>
+
+        <p>
+          <code>This is the start of an editing session</code>
+        </p>
+      </main>
     </div>
   );
 }
