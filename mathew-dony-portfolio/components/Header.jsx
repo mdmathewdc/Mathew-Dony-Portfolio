@@ -5,8 +5,9 @@ export default function Header() {
   React.useEffect(() => {
     import("@lottiefiles/lottie-player");
   });
-  return (
-    <div>
+
+  const HeaderWave = () => {
+    return (
       <lottie-player
         src="https://assets4.lottiefiles.com/packages/lf20_pq6sumqc.json"
         ref={ref}
@@ -15,6 +16,12 @@ export default function Header() {
         loop
         autoplay
       ></lottie-player>
+    );
+  };
+
+  return (
+    <div>
+      <HeaderWave />
     </div>
   );
 }
