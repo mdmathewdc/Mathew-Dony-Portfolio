@@ -9,6 +9,7 @@ export default function Home() {
     <div>
       <lottie-player
         src="https://assets4.lottiefiles.com/packages/lf20_pq6sumqc.json"
+        ref={ref}
         background="transparent"
         speed="1"
         loop
