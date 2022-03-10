@@ -9,14 +9,14 @@ const Header = () => {
 
   const HeaderWave = () => {
     return (
-        <lottie-player
-          src="https://assets4.lottiefiles.com/packages/lf20_pq6sumqc.json"
-          ref={ref}
-          background="transparent"
-          speed="1"
-          loop
-          autoplay
-        ></lottie-player>
+      <lottie-player
+        src="https://assets4.lottiefiles.com/packages/lf20_pq6sumqc.json"
+        ref={ref}
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></lottie-player>
     );
   };
 
@@ -45,10 +45,13 @@ const Header = () => {
 };
 
 const StyledHand = styled.div`
- lottie-player {
-  width: 100px;
-  height: 100px;
- }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  lottie-player {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export default Header;
