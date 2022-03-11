@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <div>
+    <HeroContainer>
       <HeaderWave />
       <main>
         <StyledHand>
@@ -40,7 +40,7 @@ const Header = () => {
           <code>Software Engineer</code>
         </p>
       </main>
-    </div>
+    </HeroContainer>
   );
 };
 
@@ -52,6 +52,10 @@ const StyledHand = styled.div`
     width: 50px;
     height: 50px;
   }
+`;
+
+const HeroContainer = styled.div`
+  min-height: 100vh;
 `;
 
 export default Header;

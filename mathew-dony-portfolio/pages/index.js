@@ -1,16 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Header } from "../components";
+import { Header, Resume } from "../components";
 
 export default function Home() {
   return (
     <div>
-      <Header />
       <Head>
         <title>Mathew Dony</title>
         <meta name="description" content="Portfolio of Mathew Dony" />
         <link rel="icon" href="/favicon.png" />
       </Head>
+
+      <Header />
+      <Resume />
+
 
       <footer>
         <span>
