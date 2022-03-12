@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
 
-const Header = () => {
+const Hero = () => {
   const ref = useRef(null);
   React.useEffect(() => {
     import("@lottiefiles/lottie-player");
@@ -58,4 +58,4 @@ const HeroContainer = styled.div`
   min-height: 100vh;
 `;
 
-export default Header;
+export default Hero;

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Header, Resume } from "../components";
+import { Hero, Resume, Technologies, Projects, Contact } from "../components";
 
 export default function Home() {
   return (
@@ -11,10 +11,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <Header />
+      <Hero />
       <Resume />
-
-
+      <Technologies />
+      <Projects />
+      <Contact />
+      
       <footer>
         <span>
           <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
