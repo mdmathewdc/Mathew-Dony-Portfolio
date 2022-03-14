@@ -4,8 +4,9 @@ import { animate, stagger } from "motion";
 
 const Hero = () => {
   useEffect(() => {
+    window.scrollTo(0, 0);
     animate(
-      "main",
+      ".hi,.name-block,.job-title",
       {
         opacity: [0, 1],
         transform: ["translateY(7rem)", "translateY(0)"],
@@ -16,12 +17,12 @@ const Hero = () => {
         easing: [0.22, 0.03, 0.26, 1],
       }
     );
-  });
+  }, []);
 
   return (
     <HeroContainer>
       <main>
-        <h1>Hi,</h1>
+        <h1 className="hi">Hi,</h1>
         <h1 className="name-block">
           I'm <span className="my-name">Mathew Dony</span>
         </h1>
