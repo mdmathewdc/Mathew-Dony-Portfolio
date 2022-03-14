@@ -9,7 +9,6 @@ const Contact = () => {
 
 const ContactContainer = styled.div`
   min-height: 50vh;
-  background-color: red;
 `;
 
 export default Contact;

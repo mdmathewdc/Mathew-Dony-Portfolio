@@ -9,7 +9,6 @@ const Technologies = () => {
 
 const TechnologyContainer = styled.div`
   min-height: 100vh;
-  background-color: green;
 `;
 
 export default Technologies;

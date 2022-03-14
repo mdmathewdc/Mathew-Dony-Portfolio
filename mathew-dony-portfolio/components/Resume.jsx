@@ -9,7 +9,6 @@ const Resume = () => {
 
 const ResumeContainer = styled.div`
   min-height: 100vh;
-  background-color: #b5b5e3;
 `
 
 export default Resume;
