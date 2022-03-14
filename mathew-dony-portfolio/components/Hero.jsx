@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { animate, stagger } from "motion";
-import { Github, Linkedin } from "./Logos";
 
 const Hero = () => {
   useEffect(() => {
@@ -29,8 +28,12 @@ const Hero = () => {
         </h1>
         <p className="job-title">Software Engineer</p>
         <LogosContainer className="logos-container">
-            <Github />
-            <Linkedin />
+          <a href="https://github.com/mdmathewdc" target={"_blank"}>
+            <img src="/social-logos/github-original.svg" />
+          </a>
+          <a href="https://www.linkedin.com/in/mathew-dony" target={"_blank"}>
+            <img src="/social-logos/linkedin-plain.svg" />
+          </a>
         </LogosContainer>
       </main>
     </HeroContainer>
@@ -73,6 +76,16 @@ const LogosContainer = styled.div`
   fill: white;
   height: 1.5rem;
   gap: 1rem;
+  margin-top: 3rem;
+
+  img {
+    height: 1.5rem;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 `;
 
 export default Hero;
