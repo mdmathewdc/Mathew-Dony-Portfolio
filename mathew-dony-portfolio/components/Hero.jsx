@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { animate, stagger } from "motion";
+import { Github, Linkedin } from "./Logos";
 
 const Hero = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     animate(
-      ".hi,.name-block,.job-title",
+      ".hi,.name-block,.job-title,.logos-container",
       {
         opacity: [0, 1],
         transform: ["translateY(7rem)", "translateY(0)"],
@@ -27,6 +28,10 @@ const Hero = () => {
           I'm <span className="my-name">Mathew Dony</span>
         </h1>
         <p className="job-title">Software Engineer</p>
+        <LogosContainer className="logos-container">
+            <Github />
+            <Linkedin />
+        </LogosContainer>
       </main>
     </HeroContainer>
   );
@@ -61,6 +66,13 @@ const HeroContainer = styled.div`
   .job-title {
     font-weight: 200;
   }
+`;
+
+const LogosContainer = styled.div`
+  display: flex;
+  fill: white;
+  height: 1.5rem;
+  gap: 1rem;
 `;
 
 export default Hero;
