@@ -28,7 +28,7 @@ const Home = () => {
 }
 
 const Container = styled.div`
-  padding: 0 50px;
+  padding: 0 10vw;
 `;
 
 export default Home;
