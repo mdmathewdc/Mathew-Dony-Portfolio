@@ -3,16 +3,26 @@ import styled from "styled-components";
 import { animate, stagger } from "motion";
 
 const Hero = () => {
-
   useEffect(() => {
-    animate("main", { transform: "scale(1.07)" }, { duration: 2.5 });
+    animate(
+      "main",
+      {
+        opacity: [0, 1],
+        transform: ["translateY(7rem)", "translateY(0)"],
+      },
+      {
+        delay: stagger(0.2),
+        duration: 1,
+        easing: [0.22, 0.03, 0.26, 1],
+      }
+    );
   });
 
   return (
     <HeroContainer>
       <main>
         <h1>Hi,</h1>
-        <h1 className='name-block'>
+        <h1 className="name-block">
           I'm <span className="my-name">Mathew Dony</span>
         </h1>
         <p className="job-title">Software Engineer</p>
@@ -27,7 +37,7 @@ const HeroContainer = styled.div`
   font-size: 1rem;
 
   main {
-    padding-top: 30vh;
+    padding-top: 25vh;
   }
 
   .name-block {
@@ -37,7 +47,12 @@ const HeroContainer = styled.div`
   .my-name {
     font-size: 2rem;
     font-family: "Poppins", sans-serif;
-    background-image: linear-gradient(90deg,#ff0000 0%,#8b2dca 50%,#3c9ec0 100%);
+    background-image: linear-gradient(
+      90deg,
+      #ff0000 0%,
+      #8b2dca 50%,
+      #3c9ec0 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
