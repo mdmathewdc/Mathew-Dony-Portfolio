@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Hero, Resume, Technologies, Projects, Contact } from "../components";
+import styled from "styled-components";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div>
+    <Container>
       <Head>
         <title>Mathew Dony</title>
         <meta name="description" content="Portfolio of Mathew Dony" />
@@ -22,6 +23,12 @@ export default function Home() {
           <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
         </span>
       </footer>
-    </div>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  padding: 0 50px;
+`;
+
+export default Home;
