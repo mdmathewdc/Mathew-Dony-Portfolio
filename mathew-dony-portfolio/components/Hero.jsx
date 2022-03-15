@@ -58,13 +58,15 @@ const HeroContainer = styled.div`
     width: 24px;
     height: 24px;
     margin-left: -12px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-left: 2.5px solid;
+    border-bottom: 2.5px solid;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    -webkit-animation: scrolldown 2.25s infinite;
-    animation: scrolldown 2.25s infinite;
+    -webkit-animation: scrolldown 2.75s infinite;
+    animation: scrolldown 2.75s infinite;
     box-sizing: border-box;
+    border-image: linear-gradient(140deg, #f8081d 0%, #4795c1 100%);
+    border-image-slice: 1;
   }
 
   @-webkit-keyframes scrolldown {
