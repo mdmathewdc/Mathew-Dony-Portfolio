@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import { animate, stagger } from "motion";
+import { TypingText } from ".";
 
 const Hero = () => {
   useEffect(() => {
@@ -26,7 +27,7 @@ const Hero = () => {
         <h1 className="name-block">
           I'm <span className="my-name">Mathew Dony</span>
         </h1>
-        <p className="job-title">Software Engineer</p>
+        <TypingText className="job-title" />
         <LogosContainer className="logos-container">
           <a href="https://github.com/mdmathewdc" target={"_blank"}>
             <img src="/social-logos/github-original.svg" />
