@@ -50,7 +50,7 @@ const Hero = () => {
 const HeroContainer = styled.div`
   min-height: 100vh;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.3rem;
 
   .scroll-down a span {
     position: absolute;
@@ -117,16 +117,8 @@ const HeroContainer = styled.div`
     -webkit-text-fill-color: transparent;
   }
 
-  .job-title {
-    font-weight: 200;
-  }
-
   @media (min-width: 768px) {
     font-size: 1.5rem;
-
-    .job-title {
-      font-size: 1.25rem;
-    }
   }
 `;
 

@@ -55,6 +55,12 @@ const TypingText = () => {
 };
 
 const Wrapper = styled.div`
+  font-weight: 200;
+  font-size: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
   .item {
     visibility: hidden;
     display: none;
