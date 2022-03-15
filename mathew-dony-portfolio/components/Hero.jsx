@@ -105,7 +105,7 @@ const HeroContainer = styled.div`
   }
 
   .my-name {
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     background-image: linear-gradient(
       90deg,
       #ff0000 0%,
@@ -122,6 +122,10 @@ const HeroContainer = styled.div`
 
   @media (min-width: 768px) {
     font-size: 1.5rem;
+
+    .job-title {
+      font-size: 1.25rem;
+    }
   }
 `;
 
