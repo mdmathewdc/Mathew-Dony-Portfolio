@@ -7,7 +7,7 @@ const Hero = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     animate(
-      ".hi,.name-block,.job-title,.logos-container,.scroll-down",
+      ".hi,.name-block,.logos-container,.scroll-down,.TypingText__Wrapper-sc-x6g7br-0",
       {
         opacity: [0, 1],
         transform: ["translateY(7rem)", "translateY(0)"],
