@@ -29,6 +29,7 @@ const Home = () => {
 
 const Container = styled.div`
   padding: 0 10vw;
+  color: white;
 `;
 
 export default Home;
