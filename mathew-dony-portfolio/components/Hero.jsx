@@ -53,7 +53,7 @@ const HeroContainer = styled.div`
 
   .scroll-down a span {
     position: absolute;
-    top: 15vh;
+    top: 20vh;
     left: 50%;
     width: 24px;
     height: 24px;
