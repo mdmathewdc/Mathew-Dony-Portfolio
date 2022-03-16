@@ -24,6 +24,7 @@ const StyledLanguageTile = styled.div`
     font-size: 0.8rem;
     margin-top: 0.3rem;
     font-weight: 200;
+    color: #c6c6c6;
   }
 `;
 export default LanguageTile;

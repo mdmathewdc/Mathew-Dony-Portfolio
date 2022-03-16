@@ -24,8 +24,8 @@ const TechnologyContainer = styled.div`
 `;
 
 const LanguageTilesContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
   gap: 1rem;
 `;
 
