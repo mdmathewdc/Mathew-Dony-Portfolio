@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const TypingText = () => {
+
+  //TO DO: Convert function to get data from an array
+  
   let wrapper;
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 

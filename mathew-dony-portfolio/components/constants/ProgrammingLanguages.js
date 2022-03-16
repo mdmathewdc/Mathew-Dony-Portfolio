@@ -1,7 +1,7 @@
 export const languages = [
   "Javascript",
-  "AWS",
   "TypeScript",
+  "AWS",
   "React",
   "CSS",
   "Powershell",
@@ -13,6 +13,7 @@ export const languages = [
   "styled-components",
   "Next.js",
   "Confluence",
+  "Bootstrap",
   "Jira",
   "Node.js",
   "Ember.js",
