@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { SectionHeader } from "./CommonStyles";
+import { languages } from "./constants/ProgrammingLanguages";
 
 const Technologies = () => {
-
-  const languages = ['Javascript', 'TypeScript', 'React'];
 
   return (
     <TechnologyContainer>
