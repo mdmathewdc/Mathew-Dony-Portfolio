@@ -1,16 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const LanguageTile = ({ name }) => {
+
   return (
-    <StyledLanguageTile>
+    <StyledLanguageTile
+      animate={{ opacity: [0, 1], scale: [null, 1.1, 1] }}
+      transition={{ type: 'spring', bounce: 0.3, duration: 1.5, ease: "easeInOut" }}
+    >
       <img src={`/programming-language-logos/${name}.svg`} alt={name} />
       <span>{name}</span>
     </StyledLanguageTile>
   );
 };
 
-const StyledLanguageTile = styled.div`
+const StyledLanguageTile = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;

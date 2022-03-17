@@ -3,10 +3,20 @@ import styled from "styled-components";
 import { SectionHeader } from "./CommonStyles";
 import { languages } from "./constants/ProgrammingLanguages";
 import LanguageTile from "./LanguageTile";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { useAnimation } from "framer-motion";
 
 const Technologies = () => {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    console.log('view', inView);
+  }, [inView]);
+
   return (
-    <TechnologyContainer>
+    <TechnologyContainer ref={ref}>
       <SectionHeader>
         My Tech Stack<span>.</span>
       </SectionHeader>

@@ -13,7 +13,7 @@ const Hero = () => {
         transform: ["translateY(7rem)", "translateY(0)"],
       },
       {
-        delay: stagger(0.2),
+        delay: stagger(0.3),
         duration: 1,
         easing: [0.22, 0.03, 0.26, 1],
       }
