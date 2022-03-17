@@ -6,7 +6,7 @@ const Resume = () => {
   return (
     <ResumeContainer>
       <SectionHeader>
-        Resume<span>.</span>
+        <h2>Where I've Worked</h2><span></span>
       </SectionHeader>
     </ResumeContainer>
   );

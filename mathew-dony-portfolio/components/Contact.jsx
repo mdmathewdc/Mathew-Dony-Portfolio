@@ -6,7 +6,8 @@ const Contact = () => {
   return (
     <ContactContainer>
       <SectionHeader>
-        Contact<span>.</span>
+        <h2>Contact</h2>
+        <span></span>
       </SectionHeader>
     </ContactContainer>
   );

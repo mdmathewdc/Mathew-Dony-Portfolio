@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <ProjectContainer>
       <SectionHeader>
-        Projects<span>.</span>
+        <h2>Some Things I've Built</h2><span></span>
       </SectionHeader>
     </ProjectContainer>
   );

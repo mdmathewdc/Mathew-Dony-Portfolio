@@ -5,11 +5,11 @@ import { languages } from "./constants/ProgrammingLanguages";
 import LanguageTile from "./LanguageTile";
 
 const Technologies = () => {
-
   return (
     <TechnologyContainer>
       <SectionHeader>
-        My Tech Stack<span>.</span>
+        <h2>My Tech Stack</h2>
+        <span></span>
       </SectionHeader>
       <LanguageTilesContainer>
         {languages.map((language) => (
