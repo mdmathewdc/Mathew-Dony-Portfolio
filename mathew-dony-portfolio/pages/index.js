@@ -28,8 +28,12 @@ const Home = () => {
 }
 
 const Container = styled.div`
-  padding: 0 10vw;
+  padding: 0 5vw;
   color: white;
+
+  @media (min-width: 768px) {
+    padding: 0 10vw;
+  }
 `;
 
 export default Home;
