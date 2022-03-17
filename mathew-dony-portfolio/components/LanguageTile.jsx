@@ -11,9 +11,9 @@ const LanguageTile = ({ name }) => {
       transition={{
         type: "spring",
         bounce: 0.5,
-        duration: 1.5,
+        duration: 1.8,
         ease: "easeInOut",
-        delay: 0.2,
+        delay: 0.3,
       }}
       variants={{
         visible: { opacity: 1, scale: 1.1 },
