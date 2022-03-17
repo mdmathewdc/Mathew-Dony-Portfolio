@@ -8,7 +8,7 @@ const Technologies = () => {
   return (
     <TechnologyContainer>
       <SectionHeader>
-        Technologies<span>.</span>
+        My Tech Stack<span>.</span>
       </SectionHeader>
       <LanguageTilesContainer>
         {languages.map((language) => (
@@ -20,7 +20,7 @@ const Technologies = () => {
 };
 
 const TechnologyContainer = styled.div`
-  min-height: 100vh;
+  min-height: max-content;
 `;
 
 const LanguageTilesContainer = styled.div`
