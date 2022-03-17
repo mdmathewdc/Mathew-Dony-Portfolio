@@ -1,10 +1,10 @@
 export const languages = [
-  "Javascript",
+  "JavaScript",
   "TypeScript",
   "AWS",
   "React",
   "CSS",
-  "Powershell",
+  "PowerShell",
   "Shopify",
   "MongoDB",
   "GraphQL",
