@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SectionHeader = styled.h2`
   font-size: 1.3rem;
   font-weight: 400;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   margin: 0;
 
   span {
