@@ -28,6 +28,7 @@ const LanguageTilesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
   gap: 1rem;
+  row-gap: 2rem;
 `;
 
 export default Technologies;
