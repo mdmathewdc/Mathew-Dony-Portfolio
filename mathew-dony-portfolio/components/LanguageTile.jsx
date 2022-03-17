@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-const LanguageTile = ({ name }) => {
+const LanguageTile = ({ name, animate }) => {
 
   return (
     <StyledLanguageTile
-      animate={{ opacity: [0, 1], scale: [null, 1.1, 1] }}
+      animate={animate}
       transition={{ type: 'spring', bounce: 0.3, duration: 1.5, ease: "easeInOut" }}
     >
       <img src={`/programming-language-logos/${name}.svg`} alt={name} />

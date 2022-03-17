@@ -12,7 +12,9 @@ const Technologies = () => {
   const animation = useAnimation();
 
   useEffect(() => {
-    console.log('view', inView);
+    if (inView) {
+      animation.start({ opacity: [0, 1], scale: [null, 1] });
+    }
   }, [inView]);
 
   return (
@@ -22,7 +24,7 @@ const Technologies = () => {
       </SectionHeader>
       <LanguageTilesContainer>
         {languages.map((language) => (
-          <LanguageTile name={language} />
+          <LanguageTile name={language} animate={animation} />
         ))}
       </LanguageTilesContainer>
     </TechnologyContainer>
