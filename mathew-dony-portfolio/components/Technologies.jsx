@@ -29,6 +29,10 @@ const LanguageTilesContainer = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
   gap: 1rem;
   row-gap: 2rem;
+
+  @media (min-width: 768px) {
+    row-gap: 3rem;
+  }
 `;
 
 export default Technologies;
