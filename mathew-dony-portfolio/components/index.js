@@ -11,3 +11,5 @@ export  { default as Contact } from './Contact';
 export { default as TypingText } from './TypingText';
 
 export { default as LanguageTile } from './LanguageTile';
+
+export { default as JobTab } from './JobTab';
