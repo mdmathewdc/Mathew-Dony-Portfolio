@@ -54,7 +54,8 @@ export default function BasicTabs() {
           onChange={handleChange}
           aria-label="basic tabs example"
           scrollButtons="auto"
-          textColor="secondary"
+          textColor="primary"
+          variant="scrollable"
         >
           <StyledTab label="Item One" {...a11yProps(0)} />
           <StyledTab label="Item Two" {...a11yProps(1)} />
@@ -77,4 +78,5 @@ export default function BasicTabs() {
 
 const StyledTab = styled(Tab)`
   color: white;
+  text-transform: none;
 `;
