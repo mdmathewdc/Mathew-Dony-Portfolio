@@ -4,8 +4,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import styled from "styled-components";
-
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -57,10 +55,10 @@ export default function BasicTabs() {
           textColor="primary"
           variant="scrollable"
         >
-          <StyledTab label="Item One" {...a11yProps(0)} />
-          <StyledTab label="Item Two" {...a11yProps(1)} />
-          <StyledTab label="Item Three" {...a11yProps(2)} />
-          <StyledTab label="Item Four" {...a11yProps(3)} />
+          <Tab sx={{color: 'white'}} label="Item One" {...a11yProps(0)} />
+          <Tab sx={{color: 'white'}} label="Item Two" {...a11yProps(1)} />
+          <Tab sx={{color: 'white'}} label="Item Three" {...a11yProps(2)} />
+          <Tab sx={{color: 'white'}} label="Item Four" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -75,8 +73,3 @@ export default function BasicTabs() {
     </Box>
   );
 }
-
-const StyledTab = styled(Tab)`
-  color: white;
-  text-transform: none;
-`;
