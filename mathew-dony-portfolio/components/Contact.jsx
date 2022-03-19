@@ -25,6 +25,10 @@ const Contact = () => {
         <a href="https://www.instagram.com/mathew__dony" target={"_blank"}>
           <img src="/social-logos/instagram.svg" className='instagram'/>
         </a>
+        <a href="https://www.discordapp.com/users/mdmathewdc#7892" target={"_blank"}>
+          <img src="/social-logos/discord.svg" />
+        </a>
+        
         
       </LogosContainer>
     </ContactContainer>
@@ -32,7 +36,9 @@ const Contact = () => {
 };
 
 const ContactContainer = styled.div`
-  min-height: 50vh;
+  p {
+    font-weight: 300;
+  }
 `;
 
 const LogosContainer = styled.div`
@@ -40,7 +46,7 @@ const LogosContainer = styled.div`
   fill: white;
   height: 1.5rem;
   gap: 1rem;
-  margin-top: 3rem;
+  margin: 2rem 0;
 
   img {
     height: 1.5rem;

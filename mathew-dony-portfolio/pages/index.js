@@ -17,15 +17,13 @@ const Home = () => {
       <Technologies />
       <Projects />
       <Contact />
-      
+
       <footer>
-        <span>
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </span>
+        <p>Copyright 2022</p>
       </footer>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   padding: 0 5vw;
