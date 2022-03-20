@@ -38,6 +38,7 @@ const Contact = () => {
 const ContactContainer = styled.div`
   p {
     font-weight: 300;
+    text-align: center;
   }
 `;
 
@@ -47,6 +48,7 @@ const LogosContainer = styled.div`
   height: 1.5rem;
   gap: 1rem;
   margin: 2rem 0;
+  justify-content: center;
 
   img {
     height: 1.5rem;

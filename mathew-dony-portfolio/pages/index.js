@@ -19,7 +19,7 @@ const Home = () => {
       <Contact />
 
       <footer>
-        <p>Copyright 2022</p>
+        <p className="credits">&copy; Designed and built by Mathew Dony</p>
       </footer>
     </Container>
   );
@@ -28,6 +28,12 @@ const Home = () => {
 const Container = styled.div`
   padding: 0 5vw;
   color: white;
+
+  .credits {
+    text-align: center;
+    font-size: 0.6rem;
+    color: #4f5a61;
+  }
 
   @media (min-width: 768px) {
     padding: 0 10vw;
