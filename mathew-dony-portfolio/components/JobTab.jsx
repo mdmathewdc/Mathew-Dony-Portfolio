@@ -4,8 +4,9 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-const TabPanel = props => {
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
+const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
 
   return (
@@ -23,7 +24,7 @@ const TabPanel = props => {
       )}
     </div>
   );
-}
+};
 
 TabPanel.propTypes = {
   children: PropTypes.node,
@@ -32,37 +33,63 @@ TabPanel.propTypes = {
 };
 
 // ARIA Accessibility Props
-const a11yProps = index => {
+const a11yProps = (index) => {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`,
   };
-}
+};
 
-const JobTab = () => {
+const JobTab = ({ data }) => {
+  console.log(data);
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        mobile: 0,
+        desktop: 768,
+      },
+    },
+  });
+
   return (
-    <Box sx={{ width: "100%" }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-          scrollButtons="auto"
-          textColor="primary"
-          variant="scrollable"
-        >
-          <Tab
-            sx={{ color: "white", textTransform: "none" }}
-            label="Item One"
-            {...a11yProps(0)}
-          />
-          <Tab
+    <ThemeProvider theme={theme}>
+      <Box
+        sx={{
+          width: {
+            mobile: '114%',
+            desktop: '100%',
+          },
+          marginLeft: {
+            mobile: '-6vw',
+            desktop: '0',
+          }
+
+        }}
+      >
+        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            scrollButtons="auto"
+            textColor="primary"
+            allowScrollButtonsMobile
+            variant="scrollable"
+          >
+            {data.map((job, index) => (
+              <Tab
+                sx={{ color: "white", textTransform: "none" }}
+                label={job.name}
+                {...a11yProps(index)}
+              />
+            ))}
+
+            {/* <Tab
             sx={{ color: "white", textTransform: "none" }}
             label="Item Two"
             {...a11yProps(1)}
@@ -76,20 +103,21 @@ const JobTab = () => {
             sx={{ color: "white", textTransform: "none" }}
             label="Item Four"
             {...a11yProps(3)}
-          />
-        </Tabs>
+          /> */}
+          </Tabs>
+        </Box>
+        <TabPanel value={value} index={0}>
+          Item One
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          Item Two
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          Item Three
+        </TabPanel>
       </Box>
-      <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
-    </Box>
+    </ThemeProvider>
   );
-}
+};
 
 export default JobTab;
