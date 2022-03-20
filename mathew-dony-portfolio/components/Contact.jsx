@@ -13,7 +13,7 @@ const Contact = () => {
         <p>I'm always open for a chat. You can connect me on:</p>
       </div>
       <LogosContainer>
-      <a href="mailto:mathewdony007@gmail.com" target={"_blank"}>
+        <a href="mailto:mathewdony007@gmail.com" target={"_blank"}>
           <img src="/social-logos/mail.svg" className="mail" />
         </a>
         <a href="https://github.com/mdmathewdc" target={"_blank"}>
@@ -23,13 +23,14 @@ const Contact = () => {
           <img src="/social-logos/linkedin-plain.svg" />
         </a>
         <a href="https://www.instagram.com/mathew__dony" target={"_blank"}>
-          <img src="/social-logos/instagram.svg" className='instagram'/>
+          <img src="/social-logos/instagram.svg" className="instagram" />
         </a>
-        <a href="https://www.discordapp.com/users/mdmathewdc#7892" target={"_blank"}>
+        <a
+          href="https://www.discordapp.com/users/mdmathewdc#7892"
+          target={"_blank"}
+        >
           <img src="/social-logos/discord.svg" />
         </a>
-        
-        
       </LogosContainer>
     </ContactContainer>
   );
@@ -39,6 +40,7 @@ const ContactContainer = styled.div`
   p {
     font-weight: 300;
     text-align: center;
+    font-size: 0.9rem;
   }
 `;
 
