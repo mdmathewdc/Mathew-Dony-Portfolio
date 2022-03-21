@@ -115,22 +115,6 @@ const JobTab = ({ data }) => {
                 {...a11yProps(index)}
               />
             ))}
-
-            {/* <Tab
-            sx={{ color: "white", textTransform: "none" }}
-            label="Item Two"
-            {...a11yProps(1)}
-          />
-          <Tab
-            sx={{ color: "white", textTransform: "none" }}
-            label="Item Three"
-            {...a11yProps(2)}
-          />
-          <Tab
-            sx={{ color: "white", textTransform: "none" }}
-            label="Item Four"
-            {...a11yProps(3)}
-          /> */}
           </Tabs>
         </Box>
         {RenderedTabs(data, value)}
@@ -152,6 +136,13 @@ const JobTabContainer = styled.div`
     color: #9cb1bb;
     text-align: justify;
     list-style: circle;
+    font-weight: 300;
+  }
+
+  a {
+    background: -webkit-linear-gradient(180deg, #ff0022, #0ea9fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 `;
 

@@ -36,7 +36,7 @@ const Container = styled.div`
   }
 
   @media (min-width: 768px) {
-    padding: 0 10vw;
+    padding: 0 15vw;
   }
 `;
 
