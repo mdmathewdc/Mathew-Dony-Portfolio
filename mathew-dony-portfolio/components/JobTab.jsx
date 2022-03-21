@@ -5,17 +5,22 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import styled from "styled-components";
 
 const RenderedTabs = (data, value) => {
   return data.map((job, index) => (
     <TabPanel value={value} index={index}>
-      <p>{job.role}</p>
-      <code>{job.time}</code>
-      <ul>
-        {job.description.map((desc, index) => (
-          <li>{desc}</li>
-        ))}
-      </ul>
+      <JobTabContainer>
+        <p>
+          {job.role} @ <a href={job.url}>{job.name}</a>
+        </p>
+        <p className="job-time">{job.time}</p>
+        <ul>
+          {job.description.map((desc, index) => (
+            <li>{desc}</li>
+          ))}
+        </ul>
+      </JobTabContainer>
     </TabPanel>
   ));
 };
@@ -32,9 +37,7 @@ const TabPanel = (props) => {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
+        <Box sx={{ p: 2, paddingTop: 0, paddingBottom: 0 }}>{children}</Box>
       )}
     </div>
   );
@@ -135,5 +138,21 @@ const JobTab = ({ data }) => {
     </ThemeProvider>
   );
 };
+
+const JobTabContainer = styled.div`
+  .job-time {
+    font-size: 0.8rem;
+    color: #21a9f3;
+    font-weight: 500;
+  }
+
+  ul {
+    padding-left: 4vw;
+    font-size: 0.9rem;
+    color: #9cb1bb;
+    text-align: justify;
+    list-style: circle;
+  }
+`;
 
 export default JobTab;

@@ -3,7 +3,7 @@ export const jobData = [
     name: "Jaxsta Music",
     role: "Software Engineer",
     time: "Nov 2021 - Present",
-    url: "www.jaxsta.com",
+    url: "https://jaxsta.com",
     description: [
       "Developing new features and maintaining the Jaxsta web application using React, Next.js, TypeScript, Ember.js and JavaScript as part of a tightly-knit, fast moving agile development team",
       "Contributing to the front end product and consumer facing architecture for the Jaxsta website of over 65 million pages incorporating internally developed API's and CMS based content",
@@ -19,7 +19,7 @@ export const jobData = [
     name: "Cider House ICT",
     role: "Full Stack Developer & Network Support",
     time: "Apr 2021 - Nov 2021",
-    url: "www.ciderhouse.com.au",
+    url: "https://ciderhouse.com.au",
     description: [
       " Developing and maintaining web applications using Node.js, PHP, SQL, JavaScript, HTML, Bootstrap, jQuery and REST APIs",
       "Providing technical and network support to clients for in-house developed software applications via phone, chat channels and remote connections",
@@ -34,7 +34,7 @@ export const jobData = [
     name: "BeerCo.com.au",
     role: "Software Engineer",
     time: "Nov 2020 - Dec 2021",
-    url: "www.beerco.com.au",
+    url: "https://beerco.com.au",
     description: [
       "Shopify development and website maintenance",
       "Development of custom web applications using Liquid, HTML, CSS, JavaScript, AJAX, PHP and jQuery",
@@ -49,7 +49,7 @@ export const jobData = [
     name: "Single Use Ain't Sexy",
     role: "Shopify Developer",
     time: "Sep 2021 - Present",
-    url: "www.singleuseaintsexy.com",
+    url: "https://singleuseaintsexy.com",
     description: [
       "Developing, maintaining and making custom changes to the Shopify website",
     ],
@@ -58,7 +58,7 @@ export const jobData = [
     name: "Cognizant",
     role: "Programmer Analyst",
     time: "Nov 2017 - Jul 2019",
-    url: "www.cognizant.com",
+    url: "https://cognizant.com",
     description: [
       "Provided IT services like Analysis and Design, Software development and Active Directory management in the area of Cyber Security application support",
       "Developed websites using HTML, CSS and JavaScript and performed back-end JSON formatting",
