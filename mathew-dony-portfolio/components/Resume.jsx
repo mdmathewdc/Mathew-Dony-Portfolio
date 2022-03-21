@@ -15,8 +15,6 @@ const Resume = () => {
   );
 };
 
-const ResumeContainer = styled.div`
-  min-height: 100vh;
-`;
+const ResumeContainer = styled.div``;
 
 export default Resume;

@@ -9,7 +9,13 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 const RenderedTabs = (data, value) => {
   return data.map((job, index) => (
     <TabPanel value={value} index={index}>
-      {job.role}
+      <p>{job.role}</p>
+      <code>{job.time}</code>
+      <ul>
+        {job.description.map((desc, index) => (
+          <li>{desc}</li>
+        ))}
+      </ul>
     </TabPanel>
   ));
 };
