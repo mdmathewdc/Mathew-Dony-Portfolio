@@ -6,6 +6,14 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
+const RenderedTabs = (data, value) => {
+  return data.map((job, index) => (
+    <TabPanel value={value} index={index}>
+      {job.role}
+    </TabPanel>
+  ));
+};
+
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
 
@@ -94,7 +102,7 @@ const JobTab = ({ data }) => {
               <Tab
                 sx={{ color: "white", textTransform: "none" }}
                 label={job.name}
-                style={{color: "#4398c1"}}
+                style={{ color: "#4398c1" }}
                 {...a11yProps(index)}
               />
             ))}
@@ -116,15 +124,7 @@ const JobTab = ({ data }) => {
           /> */}
           </Tabs>
         </Box>
-        <TabPanel value={value} index={0}>
-          Item One
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          Item Two
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          Item Three
-        </TabPanel>
+        {RenderedTabs(data, value)}
       </Box>
     </ThemeProvider>
   );
