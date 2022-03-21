@@ -62,12 +62,16 @@ const JobTab = ({ data }) => {
       <Box
         sx={{
           width: {
-            mobile: '114%',
+            mobile: '100vw',
             desktop: '100%',
           },
           marginLeft: {
-            mobile: '-6vw',
-            desktop: '0',
+            mobile: '-5vw',
+            desktop: 0,
+          },
+          marginRight: {
+            mobile: '-5vw',
+            desktop: 0,
           }
 
         }}
