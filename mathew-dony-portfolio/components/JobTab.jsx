@@ -62,18 +62,17 @@ const JobTab = ({ data }) => {
       <Box
         sx={{
           width: {
-            mobile: '100vw',
-            desktop: '100%',
+            mobile: "100vw",
+            desktop: "100%",
           },
           marginLeft: {
-            mobile: '-5vw',
+            mobile: "-5vw",
             desktop: 0,
           },
           marginRight: {
-            mobile: '-5vw',
+            mobile: "-5vw",
             desktop: 0,
-          }
-
+          },
         }}
       >
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -82,13 +81,20 @@ const JobTab = ({ data }) => {
             onChange={handleChange}
             scrollButtons="auto"
             textColor="primary"
+            indicatorColor="primary"
             allowScrollButtonsMobile
             variant="scrollable"
+            TabIndicatorProps={{
+              style: {
+                backgroundColor: "#4398c1",
+              },
+            }}
           >
             {data.map((job, index) => (
               <Tab
                 sx={{ color: "white", textTransform: "none" }}
                 label={job.name}
+                style={{color: "#4398c1"}}
                 {...a11yProps(index)}
               />
             ))}
