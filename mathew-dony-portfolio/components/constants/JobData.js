@@ -38,6 +38,7 @@ export const jobData = [
     description: [
       "Shopify development and website maintenance",
       "Development of custom web applications using Liquid, HTML, CSS, JavaScript, AJAX, PHP and jQuery",
+      "Developed a custom Chrome browser extension for filtering postcodes based on shipping surcharges",
       "Developed a Shopify Product Bundler app using React.js, Node.js, MongoDB, Webhooks and REST APIs deployed on Heroku",
       "Developing a multi-seller marketplace app using Shopify REST APIs",
       "Increasing the web traffic and organic search engine results of the organization through Search Engine Optimization (SEO)",
