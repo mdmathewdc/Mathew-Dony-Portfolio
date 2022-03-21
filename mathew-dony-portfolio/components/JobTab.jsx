@@ -139,10 +139,15 @@ const JobTabContainer = styled.div`
     font-weight: 300;
   }
 
+  li:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
   a {
     background: -webkit-linear-gradient(180deg, #ff0022, #0ea9fb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 500;
   }
 `;
 
