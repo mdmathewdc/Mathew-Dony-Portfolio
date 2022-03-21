@@ -39,7 +39,7 @@ const Hero = () => {
       </section>
       <div className="scroll-down">
         {/* Add an Href here to scroll to next section */}
-        <a href="#">
+        <a href="#resume-section">
           <span></span>
         </a>
       </div>

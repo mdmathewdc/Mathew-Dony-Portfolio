@@ -6,7 +6,7 @@ import { jobData } from "./constants/JobData";
 
 const Resume = () => {
   return (
-    <ResumeContainer>
+    <ResumeContainer id="resume-section">
       <SectionHeader>
         <h2>Where I've Worked</h2><span></span>
       </SectionHeader>
@@ -16,7 +16,9 @@ const Resume = () => {
 };
 
 const ResumeContainer = styled.div`
-  min-height: 90vh;
+  min-height: 95vh;
+  padding-top: 10px; // Eg: If 45px, then this will allow you to scroll 15px below your 30px header
+  margin-top: -10px;
 `;
 
 export default Resume;
