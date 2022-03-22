@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { SectionHeader } from "./CommonStyles";
+import ProjectTile from "./ProjectTile";
 
 const Projects = () => {
   return (
@@ -8,6 +9,7 @@ const Projects = () => {
       <SectionHeader>
         <h2>Some Things I've Built</h2><span></span>
       </SectionHeader>
+      <ProjectTile />
     </ProjectContainer>
   );
 };
