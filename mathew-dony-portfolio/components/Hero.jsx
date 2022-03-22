@@ -75,6 +75,10 @@ const HeroContainer = styled.div`
     border-image-slice: 1;
   }
 
+  a {
+    cursor: pointer;
+  }
+
   @-webkit-keyframes scrolldown {
     0% {
       -webkit-transform: rotate(-45deg) translate(0, 0);
