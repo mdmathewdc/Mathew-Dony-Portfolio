@@ -17,8 +17,7 @@ const Resume = () => {
 
 const ResumeContainer = styled.div`
   min-height: 95vh;
-  padding-top: 10px; // Eg: If 45px, then this will allow you to scroll 15px below your 30px header
-  margin-top: -10px;
+  scroll-margin-top: 1rem;
 `;
 
 export default Resume;
