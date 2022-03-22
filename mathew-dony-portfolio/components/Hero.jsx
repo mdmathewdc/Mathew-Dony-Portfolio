@@ -20,6 +20,11 @@ const Hero = () => {
     );
   }, []);
 
+  const handleScroll = () => {
+    const resumeSection = document.querySelector("#resume-section");
+    resumeSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <HeroContainer>
       <section>
@@ -39,7 +44,7 @@ const Hero = () => {
       </section>
       <div className="scroll-down">
         {/* Add an Href here to scroll to next section */}
-        <a href="#resume-section">
+        <a onClick={handleScroll}>
           <span></span>
         </a>
       </div>
