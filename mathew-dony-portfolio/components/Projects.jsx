@@ -14,8 +14,6 @@ const Projects = () => {
   );
 };
 
-const ProjectContainer = styled.div`
-  min-height: 100vh;
-`;
+const ProjectContainer = styled.div``;
 
 export default Projects;

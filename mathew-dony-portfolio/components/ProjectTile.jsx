@@ -9,7 +9,6 @@ const ProjectTile = () => {
   const carousel = useRef();
 
   useEffect(() => {
-    // console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth + 16);
   }, []);
 
@@ -28,7 +27,14 @@ const ProjectTile = () => {
           {projectData.map((project, index) => {
             return (
               <motion.div className="item">
+                <div className="tile-info">
                 <p>{project.name}</p>
+                <p>{project.description}</p>
+                <p>{project.technologies}</p>
+                {project.github && (<p>{project.github}</p>)}
+                {project.url && (<p>{project.url}</p>)}
+                </div>
+                <img className="tile-image" src={`/project-tiles/${project.name}.png`}></img>
               </motion.div>
             );
           })}
@@ -40,16 +46,36 @@ const ProjectTile = () => {
 
 const TileContainer = styled.div`
   .item {
+    position: relative;
     height: 35vh;
     min-width: 50vw;
     background-color: #104f72;
     border-radius: 2rem;
     padding: 2rem;
     margin: 1rem;
+    overflow: hidden;
+  }
+
+  .tile-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    filter: blur(2px);
+    transform: scale(1.05);
+  }
+
+  .tile-info {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10%;
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 
   .inner-carousel {
