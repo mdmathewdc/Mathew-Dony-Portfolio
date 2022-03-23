@@ -34,7 +34,7 @@ const ProjectTile = () => {
                   {project.github && <p>{project.github}</p>}
                   {project.url && <p>{project.url}</p>}
                 </div>
-                {/* <img className="tile-image" src={`/project-tiles/${project.name}.png`}></img> */}
+                <img className="tile-image" src={`/project-tiles/${project.name}.png`}></img>
               </motion.div>
             );
           })}
@@ -57,26 +57,30 @@ const TileContainer = styled.div`
     background: linear-gradient(142deg, #2133f8 0%, #5e2e99 50%, #b7255e 100%);
   }
 
-  // .tile-image {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   border-radius: 2rem;
-  //   filter: blur(2px);
-  //   transform: scale(1.05);
-  // }
+  .tile-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    // filter: blur(2px);
+    transform: scale(1.05);
+  }
 
   .tile-info {
     position: absolute;
     z-index: 1;
-    top: 50%;
-    left: 10%;
+    bottom: 0;
+    padding: 0 20px;
+    width: 100%;
+    left: 0;
+    background: linear-gradient(0deg,#000,transparent);
+}
   }
 
   p {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 
   .inner-carousel {
