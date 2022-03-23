@@ -26,7 +26,7 @@ const ProjectTile = () => {
         >
           {projectData.map((project, index) => {
             return (
-              <motion.div className="item">
+              <motion.div className="tile-item">
                 <div className="tile-info">
                 <p>{project.name}</p>
                 <p>{project.description}</p>
@@ -45,7 +45,7 @@ const ProjectTile = () => {
 };
 
 const TileContainer = styled.div`
-  .item {
+  .tile-item {
     position: relative;
     height: 35vh;
     min-width: 50vw;
