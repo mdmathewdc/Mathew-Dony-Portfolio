@@ -12,6 +12,12 @@ const ProjectTile = () => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth + 16);
   }, []);
 
+  const languageBox = (data) => {
+    return data.map((item, index) => {
+      return <LanguageBox>{item}</LanguageBox>;
+    });
+  };
+
   return (
     <TileContainer>
       <motion.div
@@ -30,11 +36,27 @@ const ProjectTile = () => {
                 <div className="tile-info">
                   <p>{project.name}</p>
                   <p>{project.description}</p>
-                  <p>{project.technologies}</p>
-                  {project.github && <p>{project.github}</p>}
-                  {project.url && <p>{project.url}</p>}
+                  {languageBox(project.technologies)}
+                  <div className="logos">
+                    {project.github && (
+                      <a href={project.github} target={"_blank"}>
+                        <img src="/social-logos/github-original.svg" />
+                      </a>
+                    )}
+                    {project.url && (
+                      <a href={project.url} target={"_blank"}>
+                        <img
+                          className="external-link"
+                          src="/social-logos/external-link.svg"
+                        />
+                      </a>
+                    )}
+                  </div>
                 </div>
-                <img className="tile-image" src={`/project-tiles/${project.name}.png`}></img>
+                <img
+                  className="tile-image"
+                  src={`/project-tiles/${project.name}.png`}
+                ></img>
               </motion.div>
             );
           })}
@@ -57,6 +79,27 @@ const TileContainer = styled.div`
     background: linear-gradient(142deg, #2133f8 0%, #5e2e99 50%, #b7255e 100%);
   }
 
+  .logos {
+    display: flex;
+    fill: white;
+    height: 1.5rem;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    align-items: baseline;
+  
+    img {
+      height: 1.2rem;
+      transition: transform 0.2s ease-in-out;
+  
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+    .external-link {
+        height: 1.3rem;
+    }
+  }
+
   .tile-image {
     position: absolute;
     top: 0;
@@ -64,7 +107,7 @@ const TileContainer = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 2rem;
-    // filter: blur(2px);
+    filter: brightness(0.4);
     transform: scale(1.05);
   }
 
@@ -72,7 +115,7 @@ const TileContainer = styled.div`
     position: absolute;
     z-index: 1;
     bottom: 0;
-    padding: 0 20px;
+    padding: 0 15px;
     width: 100%;
     left: 0;
     background: linear-gradient(0deg,#000,transparent);
@@ -80,7 +123,13 @@ const TileContainer = styled.div`
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    text-shadow: 0.5px 1px #000000;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  
+  
   }
 
   .inner-carousel {
@@ -91,6 +140,17 @@ const TileContainer = styled.div`
     cursor: grab;
     overflow: hidden;
   }
+`;
+
+const LanguageBox = styled.div`
+  border-radius: 0.2rem;
+  border: 1px solid #dccfcf;
+  display: inline-block;
+  font-size: 0.6rem;
+  padding: 0.1rem;
+  margin-right: 0.4rem;
+  color: #dccfcf;
+  font-weight: 300;
 `;
 
 export default ProjectTile;
