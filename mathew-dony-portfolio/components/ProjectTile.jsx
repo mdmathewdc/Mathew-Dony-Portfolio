@@ -67,10 +67,13 @@ const ProjectTile = () => {
 };
 
 const TileContainer = styled.div`
+    margin-left: -5vw;
+    margin-right: -5vw;
+
   .tile-item {
     position: relative;
     height: 35vh;
-    min-width: 50vw;
+    min-width: 12rem;
     background-color: #104f72;
     border-radius: 2rem;
     padding: 2rem;
@@ -112,10 +115,11 @@ const TileContainer = styled.div`
   }
 
   .tile-info {
+    height: 100%;
     position: absolute;
     z-index: 1;
     bottom: 0;
-    padding: 0 15px;
+    padding: 7rem 15px 0 15px;
     width: 100%;
     left: 0;
     background: linear-gradient(0deg,#000,transparent);
@@ -139,6 +143,15 @@ const TileContainer = styled.div`
   .carousel {
     cursor: grab;
     overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .tile-item {
+      min-width: 12rem;
+      height: 44vh;
+    }
+    margin-left: 0vw;
+    margin-right: 0vw;
   }
 `;
 
