@@ -19,22 +19,7 @@ const ProjectTile = () => {
   };
 
   return (
-    <TileContainer
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      transition={{
-        type: "spring",
-        bounce: 0.2,
-        duration: 1.5,
-        ease: "easeInOut",
-        delay: 0.3,
-      }}
-      variants={{
-        visible: { opacity: 1, scale: 1.1 },
-        hidden: { opacity: 0, scale: 1 },
-      }}
-    >
+    <TileContainer>
       <motion.div
         ref={carousel}
         className="carousel"
@@ -81,7 +66,7 @@ const ProjectTile = () => {
   );
 };
 
-const TileContainer = styled(motion.div)`
+const TileContainer = styled.div`
     margin-left: -5vw;
     margin-right: -5vw;
 
