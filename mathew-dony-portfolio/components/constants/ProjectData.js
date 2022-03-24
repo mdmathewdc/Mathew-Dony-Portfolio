@@ -25,6 +25,12 @@ export const projectData = [
     url: "https://chrome.google.com/webstore/detail/starshipit-toll-remote-ar/khkaoaghgikggoocdcnlmmffmmdpjann?hl=en-GB",
   },
   {
+    name: "BeerCo.com.au",
+    technologies: ["Shopify", "Web-Development"],
+    github: null,
+    url: "https://beerco.com.au",
+  },
+  {
     name: "No More Spoilers",
     technologies: ["JavaScript", "Chrome Extension"],
     github: "https://github.com/mdmathewdc/No-More-Spoilers",
