@@ -37,7 +37,7 @@ const TabPanel = (props) => {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 2, paddingTop: 0, paddingBottom: 0 }}>{children}</Box>
+        <Box sx={{ p: 3, paddingTop: 0, paddingBottom: 0 }}>{children}</Box>
       )}
     </div>
   );
@@ -132,11 +132,12 @@ const JobTabContainer = styled.div`
 
   ul {
     padding-left: 4vw;
-    font-size: 0.9rem;
+    font-size: 15px;
     color: #9cb1bb;
     text-align: justify;
     list-style: circle;
     font-weight: 300;
+    line-height: 18px;
   }
 
   li:not(:last-child) {
