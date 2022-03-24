@@ -130,11 +130,9 @@ const TileContainer = styled.div`
     font-size: 0.8rem;
     text-shadow: 0.5px 1px #000000;
     font-weight: 400;
-    white-space: nowrap;
+    height: 0.4rem;
   }
   
-  
-  }
 
   .inner-carousel {
     display: flex;

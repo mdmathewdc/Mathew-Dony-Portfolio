@@ -19,6 +19,12 @@ export const projectData = [
     url: "https://mathewdony.com",
   },
   {
+    name: "Remote Area Surcharge Finder",
+    technologies: ["JavaScript", "Chrome Extension"],
+    github: null,
+    url: "https://chrome.google.com/webstore/detail/starshipit-toll-remote-ar/khkaoaghgikggoocdcnlmmffmmdpjann?hl=en-GB",
+  },
+  {
     name: "No More Spoilers",
     technologies: ["JavaScript", "Chrome Extension"],
     github: "https://github.com/mdmathewdc/No-More-Spoilers",
