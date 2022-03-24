@@ -119,7 +119,7 @@ const TileContainer = styled.div`
     position: absolute;
     z-index: 1;
     bottom: 0;
-    padding: 9rem 15px 0 15px;
+    padding: 10rem 15px 0 15px;
     width: 100%;
     left: 0;
     background: linear-gradient(0deg,#000,transparent);
