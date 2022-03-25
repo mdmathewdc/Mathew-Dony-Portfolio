@@ -72,7 +72,7 @@ const TileContainer = styled.div`
 
   .tile-item {
     position: relative;
-    height: 35vh;
+    height: 19rem;
     min-width: 12rem;
     background-color: #104f72;
     border-radius: 2rem;
