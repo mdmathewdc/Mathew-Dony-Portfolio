@@ -10,6 +10,7 @@ const Home = () => {
         <title>Mathew Dony</title>
         <meta name="description" content="Portfolio of Mathew Dony" />
         <link rel="icon" href="/favicon.png" />
+        <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c5/Number-One.jpg" />
       </Head>
 
       <Hero />
