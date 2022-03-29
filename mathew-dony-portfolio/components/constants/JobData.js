@@ -13,6 +13,7 @@ export const jobData = [
       "Contribute to automated browser and device testing and bug fixing",
       "Working on Front-end Distributed Systems Architectures and micro-services",
       "Work with AWS mainly on S3, CloudFront, WAF and API Gateway",
+      "Developed a private Chrome extension to automate some tasks",
     ],
   },
   {
