@@ -10,8 +10,8 @@ const Home = () => {
         <title>Mathew Dony</title>
         <meta name="description" content="Portfolio of Mathew Dony" />
         <link rel="icon" href="/favicon.png" />
-        <meta property="og:image" content="https://artwork.jaxsta.com/assets/images/og/large-social-image.png" />
         <meta property="og:image" content="https://artwork.jaxsta.com/995/MerebaMusicKU.jpg?d=500x500" />
+        <meta property="og:image" content="https://artwork.jaxsta.com/assets/images/og/large-social-image.png" />
       </Head>
 
       <Hero />
