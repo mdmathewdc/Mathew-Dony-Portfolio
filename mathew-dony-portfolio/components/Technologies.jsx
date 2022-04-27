@@ -3,20 +3,23 @@ import styled from "styled-components";
 import { SectionHeader } from "./CommonStyles";
 import { languages } from "./constants/ProgrammingLanguages";
 import LanguageTile from "./LanguageTile";
+import Fade from "react-reveal/Fade";
 
 const Technologies = () => {
   return (
-    <TechnologyContainer>
-      <SectionHeader>
-        <h2>My Tech Stack</h2>
-        <span></span>
-      </SectionHeader>
-      <LanguageTilesContainer>
-        {languages.map((language) => (
-          <LanguageTile name={language} />
-        ))}
-      </LanguageTilesContainer>
-    </TechnologyContainer>
+    <Fade bottom duration={1500}>
+      <TechnologyContainer>
+        <SectionHeader>
+          <h2>My Tech Stack</h2>
+          <span></span>
+        </SectionHeader>
+        <LanguageTilesContainer>
+          {languages.map((language) => (
+            <LanguageTile name={language} />
+          ))}
+        </LanguageTilesContainer>
+      </TechnologyContainer>
+    </Fade>
   );
 };
 
