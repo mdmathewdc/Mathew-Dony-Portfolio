@@ -21,7 +21,7 @@ const Home = () => {
       <Contact />
 
       <footer>
-        <p className="credits">&copy; Designed and built by Mathew Dony</p>
+        <p className="credits">&copy; Designed and built by Mathew Dony using Next.js</p>
       </footer>
     </Container>
   );
