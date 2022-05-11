@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 
 const Contact = () => {
   return (
-    <Fade bottom duration={1500}>
+    <Fade big duration={1500}>
       <ContactContainer>
         <SectionHeader>
           <h2>Contact</h2>

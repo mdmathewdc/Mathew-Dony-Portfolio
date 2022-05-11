@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 
 const Resume = () => {
   return (
-    <Fade bottom duration={1500}>
+    <Fade big duration={1500}>
       <ResumeContainer id="resume-section">
         <SectionHeader>
           <h2>Where I've Worked</h2>

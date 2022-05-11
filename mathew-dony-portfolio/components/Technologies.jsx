@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 
 const Technologies = () => {
   return (
-    <Fade bottom duration={1500}>
+    <Fade big duration={1500}>
       <TechnologyContainer>
         <SectionHeader>
           <h2>My Tech Stack</h2>

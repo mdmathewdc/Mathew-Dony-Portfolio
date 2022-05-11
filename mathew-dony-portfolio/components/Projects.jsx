@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 
 const Projects = () => {
   return (
-    <Fade bottom duration={1500}>
+    <Fade big duration={1500}>
       <ProjectContainer>
         <SectionHeader>
           <h2>Some Things I've Built</h2>
