@@ -22,6 +22,7 @@ const LoaderWrapper = styled.div`
 	--blue: #7b51c7;
 	--violet: #4795c1;
 }
+
 	body {
 	margin: 0;
 	display: flex;
