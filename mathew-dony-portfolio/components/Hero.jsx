@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styled from "styled-components";
 import { animate, stagger } from "motion";
 import { TypingText } from ".";
+import Loader from "./Loader";
 
 const Hero = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const Hero = () => {
 
   return (
     <HeroContainer>
+      <Loader/>
       <section>
         <h1 className="hi">Hi,</h1>
         <h1 className="name-block">
