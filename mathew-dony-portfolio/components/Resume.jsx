@@ -7,7 +7,11 @@ import Fade from "react-reveal/Fade";
 
 const Resume = () => {
   return (
+<<<<<<< HEAD
     <Fade big duration={1500}>
+=======
+    <Fade bottom duration={1500} ssrReveal>
+>>>>>>> 1c023d46579a7d3c7ae12535016ba6f6cf34c19b
       <ResumeContainer id="resume-section">
         <SectionHeader>
           <h2>Where I've Worked</h2>
