@@ -33,7 +33,7 @@ const Hero = () => {
             <h1 className="name-block">
               I'm <span className="my-name">Mathew Dony</span>
             </h1>
-            <TypingText className="job-title" />
+            <TypingText/>
             <LogosContainer className="logos-container">
               <a href="https://github.com/mdmathewdc" target={"_blank"}>
                 <img src="/social-logos/github-original.svg" />
