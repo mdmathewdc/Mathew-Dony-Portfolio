@@ -22,12 +22,11 @@ const Hero = () => {
 
   return (
     <HeroContainer>
-      {isLoading && (
+      {isLoading ? (
         <Fade when={isLoading}>
           <Loader />
         </Fade>
-      )}
-      {!isLoading && (
+      ) : (
         <Fade big duration={2000} ssrReveal>
           <section>
             <h1 className="hi">Hi,</h1>
