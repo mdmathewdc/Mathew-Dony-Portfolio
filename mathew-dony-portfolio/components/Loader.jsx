@@ -28,8 +28,8 @@ const LoaderWrapper = styled.div`
   }
 
   div > div {
-    width: 17px;
-    height: 17px;
+    width: 13px;
+    height: 13px;
     border-radius: 100%;
     margin: 2vw;
     animation: bounce 2s 0.5s linear infinite;
