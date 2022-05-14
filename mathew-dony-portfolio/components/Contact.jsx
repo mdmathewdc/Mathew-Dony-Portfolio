@@ -44,6 +44,7 @@ const ContactContainer = styled.div`
     font-weight: 300;
     text-align: center;
     font-size: 0.9rem;
+    color: #9cb1bb;
   }
 `;
 

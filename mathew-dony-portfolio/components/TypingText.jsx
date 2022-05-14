@@ -80,7 +80,7 @@ const Wrapper = styled.div`
   h2 {
     font-size: 50px;
     margin: 0;
-    color: white;
+    color: #9cb1bb;
     text-align: left;
   }
 
@@ -90,15 +90,15 @@ const Wrapper = styled.div`
     display: flex;
     align-items: flex-end;
     font-weight: 200;
-    color: white;
+    color: #9cb1bb;
 
     &:after {
       content: "";
       width: 10px;
       height: 4px;
       display: block;
-      background: white;
-      color: white;
+      background: #9cb1bb;
+      color: #9cb1bb;
       margin-bottom: 1px;
       margin-left: 2px;
       animation-duration: 350ms;
