@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 
 const TypingText = () => {
 
   //TO DO: Convert function to get data from an array
+
+  // I have no idea why useEffect causes the TypingText to work properly, I'll come back to this
+  const [text, setText] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setText(true);
+    }, 300);
+  },[]);
   
   let wrapper;
   const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
