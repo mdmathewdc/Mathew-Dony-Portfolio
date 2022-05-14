@@ -40,7 +40,7 @@ const StyledLanguageTile = styled(motion.div)`
     font-size: 0.8rem;
     margin-top: 0.3rem;
     font-weight: 200;
-    color: #c6c6c6;
+    color: #9cb1bb;
     text-align: center;
   }
 `;

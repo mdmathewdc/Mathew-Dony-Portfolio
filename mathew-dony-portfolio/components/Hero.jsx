@@ -12,7 +12,7 @@ const Hero = () => {
 
     setTimeout(() => {
       setIsLoading(false);
-    }, 2500);
+    }, 1750);
   }, []);
 
   const handleScroll = () => {
