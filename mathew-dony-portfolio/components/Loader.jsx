@@ -16,9 +16,9 @@ const Loader = () => {
 
 const LoaderWrapper = styled.div`
 
-	position: absolute;
-	left: 40%;
-	top: 35%;
+	display: flex;
+	justify-content: center;
+	margin-top: 35vh;
 	z-index: 3;
 	
   div.container {
@@ -28,8 +28,8 @@ const LoaderWrapper = styled.div`
   }
 
   div > div {
-    width: 2vw;
-    height: 2vw;
+    width: 17px;
+    height: 17px;
     border-radius: 100%;
     margin: 2vw;
     animation: bounce 2s 0.5s linear infinite;
