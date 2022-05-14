@@ -18,7 +18,7 @@ const LoaderWrapper = styled.div`
 
 	display: flex;
 	justify-content: center;
-	margin-top: 35vh;
+	margin-top: 40vh;
 	z-index: 3;
 	
   div.container {
