@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 const RenderedTabs = (data, value) => {
   return data.map((job, index) => (
-    <TabPanel value={value} index={index}>
+    <TabPanel value={value} index={index} key={index}>
       <JobTabContainer>
         <p>
           {job.role} @ <a href={job.url}>{job.name}</a>
@@ -17,7 +17,7 @@ const RenderedTabs = (data, value) => {
         <p className="job-time">{job.time}</p>
         <ul>
           {job.description.map((desc, index) => (
-            <li>{desc}</li>
+            <li key={index}>{desc}</li>
           ))}
         </ul>
       </JobTabContainer>
@@ -58,7 +58,6 @@ const a11yProps = (index) => {
 };
 
 const JobTab = ({ data }) => {
-  console.log(data);
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -109,6 +108,7 @@ const JobTab = ({ data }) => {
           >
             {data.map((job, index) => (
               <Tab
+                key={index}
                 sx={{ color: "white", textTransform: "none" }}
                 label={job.name}
                 style={{ color: "#4398c1" }}

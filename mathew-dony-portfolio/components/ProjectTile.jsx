@@ -14,7 +14,7 @@ const ProjectTile = () => {
 
   const languageBox = (data) => {
     return data.map((item, index) => {
-      return <LanguageBox>{item}</LanguageBox>;
+      return <LanguageBox key={index}>{item}</LanguageBox>;
     });
   };
 
@@ -32,7 +32,7 @@ const ProjectTile = () => {
         >
           {projectData.map((project, index) => {
             return (
-              <motion.div className="tile-item">
+              <motion.div className="tile-item" key={index}>
                 <div className="tile-info">
                   <p>{project.name}</p>
                   <p>{project.description}</p>

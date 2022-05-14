@@ -14,8 +14,8 @@ const Technologies = () => {
           <span></span>
         </SectionHeader>
         <LanguageTilesContainer>
-          {languages.map((language) => (
-            <LanguageTile name={language} />
+          {languages.map((language, index) => (
+            <LanguageTile name={language} key={index} />
           ))}
         </LanguageTilesContainer>
       </TechnologyContainer>

@@ -4,11 +4,11 @@ import styled from "styled-components";
 const Loader = () => {
   return (
     <LoaderWrapper>
-      <div class="container">
-        <div class="red"></div>
-        <div class="magenta"></div>
-        <div class="purple"></div>
-        <div class="blue"></div>
+      <div className="container">
+        <div className="red"></div>
+        <div className="magenta"></div>
+        <div className="purple"></div>
+        <div className="blue"></div>
       </div>
     </LoaderWrapper>
   );
