@@ -1,24 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { animate, stagger } from "motion";
 import { TypingText } from ".";
 import Loader from "./Loader";
+import Fade from "react-reveal/Fade";
 
 const Hero = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    animate(
-      ".hi,.name-block,.logos-container,.scroll-down,.TypingText__Wrapper-sc-x6g7br-0",
-      {
-        opacity: [0, 1],
-        transform: ["translateY(7rem)", "translateY(0)"],
-      },
-      {
-        delay: stagger(0.3),
-        duration: 1,
-        easing: [0.22, 0.03, 0.26, 1],
-      }
-    );
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
   }, []);
 
   const handleScroll = () => {
@@ -28,28 +22,39 @@ const Hero = () => {
 
   return (
     <HeroContainer>
-      <Loader/>
-      <section>
-        <h1 className="hi">Hi,</h1>
-        <h1 className="name-block">
-          I'm <span className="my-name">Mathew Dony</span>
-        </h1>
-        <TypingText className="job-title" />
-        <LogosContainer className="logos-container">
-          <a href="https://github.com/mdmathewdc" target={"_blank"}>
-            <img src="/social-logos/github-original.svg" />
-          </a>
-          <a href="https://www.linkedin.com/in/mathew-dony" target={"_blank"}>
-            <img src="/social-logos/linkedin-plain.svg" />
-          </a>
-        </LogosContainer>
-      </section>
-      <div className="scroll-down">
-        {/* Add an Href here to scroll to next section */}
-        <a onClick={handleScroll}>
-          <span></span>
-        </a>
-      </div>
+      {isLoading && (
+        <Fade when={isLoading}>
+          <Loader />
+        </Fade>
+      )}
+      {!isLoading && (
+        <Fade big duration={2000} ssrReveal>
+          <section>
+            <h1 className="hi">Hi,</h1>
+            <h1 className="name-block">
+              I'm <span className="my-name">Mathew Dony</span>
+            </h1>
+            <TypingText className="job-title" />
+            <LogosContainer className="logos-container">
+              <a href="https://github.com/mdmathewdc" target={"_blank"}>
+                <img src="/social-logos/github-original.svg" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mathew-dony"
+                target={"_blank"}
+              >
+                <img src="/social-logos/linkedin-plain.svg" />
+              </a>
+            </LogosContainer>
+          </section>
+          <div className="scroll-down">
+            {/* Add an Href here to scroll to next section */}
+            <a onClick={handleScroll}>
+              <span></span>
+            </a>
+          </div>
+        </Fade>
+      )}
     </HeroContainer>
   );
 };
@@ -61,7 +66,7 @@ const HeroContainer = styled.div`
 
   .scroll-down a span {
     position: absolute;
-    top: 25vh;
+    top: 80vh;
     left: 50%;
     width: 24px;
     height: 24px;
