@@ -147,6 +147,7 @@ const TileContainer = styled.div`
     .tile-item {
       min-width: 12rem;
       height: 44vh;
+      max-height: 340px
     }
     margin-left: 0vw;
     margin-right: 0vw;
