@@ -25,6 +25,10 @@ const Technologies = () => {
 
 const TechnologyContainer = styled.div`
   min-height: max-content;
+  
+  @media (min-width: 1024px) {
+    margin-bottom: 5rem;
+  }
 `;
 
 const LanguageTilesContainer = styled.div`
