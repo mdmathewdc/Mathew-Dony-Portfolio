@@ -34,7 +34,7 @@ export const projectData = [
     name: "No More Spoilers",
     technologies: ["JavaScript", "Chrome Extension"],
     github: "https://github.com/mdmathewdc/No-More-Spoilers",
-    url: null,
+    url: "https://chrome.google.com/webstore/detail/no-more-spoilers/gdgjckmdfpildobojkgicjgfmebeedap",
   },
   {
     name: "Rabitha Exports",
