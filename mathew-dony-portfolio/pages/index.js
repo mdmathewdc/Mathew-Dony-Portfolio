@@ -12,7 +12,6 @@ const Home = () => {
         <link rel="icon" href="/favicon.png" />
         <meta property="og:description" content="Portfolio of Mathew Dony" />
         <meta property="og:image" content="https://mathewdony.com/cover_image.png" />
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-FR5JB84JK5"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
