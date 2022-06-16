@@ -37,7 +37,6 @@ const Home = () => {
 const Container = styled.div`
   padding: 0 5vw;
   color: white;
-
   .credits {
     text-align: center;
     font-size: 0.6rem;
