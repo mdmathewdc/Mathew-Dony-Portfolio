@@ -112,6 +112,7 @@ const TileContainer = styled.div`
     border-radius: 2rem;
     filter: brightness(0.4);
     transform: scale(1.05);
+    object-fit: cover;
   }
 
   .tile-info {

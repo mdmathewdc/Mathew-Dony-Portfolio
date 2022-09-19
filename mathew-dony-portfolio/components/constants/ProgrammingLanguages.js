@@ -6,6 +6,7 @@ export const languages = [
   "Next.js",
   "HTML",
   "CSS",
+  "Redux",
   "Shopify",
   "Node.js",
   "PHP",

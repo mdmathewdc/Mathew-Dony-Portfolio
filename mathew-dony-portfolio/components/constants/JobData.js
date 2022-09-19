@@ -1,8 +1,19 @@
 export const jobData = [
   {
-    name: "Jaxsta Music",
+    name: "Tyro Payments",
     role: "Software Engineer",
-    time: "Nov 2021 - Present",
+    time: "Oct 2022 - Present",
+    url: "https://www.tyro.com",
+    description: [
+      "Development using React, TypeScript, Redux and Node.js, contributing through the whole delivery life cycle, from inception to production, through to planning, development and testing",
+      "Building services and APIs",
+      "Collaborative working together with other engineers, product managers and UX designers"
+    ],
+  },
+  {
+    name: "Jaxsta",
+    role: "Software Engineer",
+    time: "Nov 2021 - Oct 2022",
     url: "https://jaxsta.com",
     description: [
       "Developing new features and maintaining the Jaxsta web application using React, Next.js, TypeScript, Ember.js and JavaScript as part of a tightly-knit, fast moving agile development team",
@@ -61,16 +72,16 @@ export const jobData = [
     time: "Nov 2017 - Jul 2019",
     url: "https://cognizant.com",
     description: [
-      "Provided IT services like Analysis and Design, Software development and Active Directory management in the area of Cyber Security application support",
-      "Developed websites using HTML, CSS and JavaScript and performed back-end JSON formatting",
-      "Experienced in IBM security tools like IBM Security Access Manager (ISAM), Tivoli Access Manager (TAM) and IBM DataPower",
-      "Worked on certificate updation in DataPower services, IP Whitelisting and adding new junctions in WebSEAL instances",
-      "Played different roles in projects to meet the client requirements and worked on different modules and applications projects as a Support Analyst",
-      "Performed Log monitoring in Splunk, DataPower service and WebSEAL instance monitoring and Incident ticket resolution in ServiceNow",
-      "Provided Level 1 and Level 2 support on application issues and provided customer support",
-      "Maintaining the weekly and monthly ISAM and DataPower status report generation and application monitoring",
+      "Provided IT services like Analysis and Design, Software development and Active Directory management in the domain of Cyber Security",
+      "Developing web apps using HTML, CSS, JavaScript and JSP, performing back-end XML to JSON formatting",
+      "Documenting and maintaining user documentation, system plans and operational procedures",
+      "Diagnosing, debugging and fixing security issues in software applications",
+      "Played different roles in projects to meet the client requirements and worked on different modules and applications projects",
       "Driving key operational services such as Problem Management and Change Management for improving the application stability and functionality",
-      "Also worked on Oracle Enterprise Single Sign-On",
+      "Worked on certificate updation in DataPower services, IP Whitelisting and adding new junctions in WebSEAL instances",
+      "Performed Log monitoring in Splunk, DataPower service and WebSEAL instance monitoring and incident ticket resolution in ServiceNow",
+      "Maintaining the weekly and monthly ISAM and DataPower status report generation and application monitoring",
+      "Experienced in security tools like IBM Security Access Manager (ISAM), Tivoli Access Manager (TAM), IBM DataPower and Oracle Enterprise Single Sign-On",
     ],
   },
 ];

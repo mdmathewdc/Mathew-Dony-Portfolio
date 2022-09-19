@@ -1,5 +1,19 @@
 export const projectData = [
   {
+    name: "Getflix",
+    technologies: ["React", "styled-components"],
+    github:
+      "https://github.com/mdmathewdc/Getflix",
+    url: "https://getflix-mdmathewdc.netlify.app/",
+  },
+  {
+    name: "Airbnb Clone",
+    technologies: ["React", "styled-components"],
+    github:
+      "https://github.com/mdmathewdc/Airbnb-Clone-2022",
+    url: "https://airbnb-clone-mathewdony.netlify.app",
+  },
+  {
     name: "MCU Countdown App",
     technologies: ["React", "styled-components"],
     github:
