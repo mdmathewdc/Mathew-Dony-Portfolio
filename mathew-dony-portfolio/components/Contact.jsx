@@ -24,9 +24,6 @@ const Contact = () => {
           <a href="https://www.linkedin.com/in/mathew-dony" target={"_blank"}>
             <img src="/social-logos/linkedin-plain.svg" />
           </a>
-          <a href="https://www.instagram.com/mathew__dony" target={"_blank"}>
-            <img src="/social-logos/instagram.svg" className="instagram" />
-          </a>
           <a
             href="https://www.discordapp.com/users/mdmathewdc#7892"
             target={"_blank"}
